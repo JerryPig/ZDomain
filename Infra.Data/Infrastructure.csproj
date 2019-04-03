@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="DomainInterfaces\**" />
+    <EmbeddedResource Remove="DomainInterfaces\**" />
+    <None Remove="DomainInterfaces\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Common\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZCore\ZCore.csproj" />
+  </ItemGroup>
+
+</Project>
