@@ -40,7 +40,7 @@ namespace ZCore.IUnitOfWork
 
         public abstract void OnExecuted();
 
-        public virtual void SaveChanges()
+        public virtual void Commit()
         {
         }
 

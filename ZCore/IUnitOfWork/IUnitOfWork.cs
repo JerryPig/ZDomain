@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ZCore.IUnitOfWork
 {
@@ -10,7 +7,7 @@ namespace ZCore.IUnitOfWork
         void Begin(UnitOfWorkOptions option);
         void Execute();
 
-        void SaveChanges();
+        void Commit();
 
         string Id { get; }
 
