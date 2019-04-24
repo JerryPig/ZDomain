@@ -11,7 +11,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Common\" />
+    <Compile Remove="Common\ExcelModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NPOI" Version="2.4.1" />
   </ItemGroup>
 
   <ItemGroup>
